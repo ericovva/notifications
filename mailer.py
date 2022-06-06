@@ -20,7 +20,7 @@ def sender(subject, body):
         msg['To'] = 'ericovva@yandex.ru'
         msg['Subject'] = "Python email"
         server = smtplib.SMTP_SSL('smtp.yandex.ru:465')
-        server.login("noreply@proil.moscow", "Pikabu808")
+        server.login("noreply@proil.moscow", "")
         msg['Subject'] = subject
         msg.attach(MIMEText(body, 'plain'))
         text = msg.as_string()
